@@ -13518,7 +13518,6 @@ section.slide {
 .jobs-section-items{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 10px -15px 40px;
 }
 
@@ -13528,6 +13527,7 @@ section.slide {
   height: 500px;
   border: 2px solid #fff;
   min-width: calc(100%/4);
+  max-width: calc(100%/3.25);
 }
 
 .jobs-section-item img{
@@ -13543,20 +13543,24 @@ section.slide {
 
 .jobs-section-item .jobs-section-item-desc .job-title{
   width: 50%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .jobs-section-item .jobs-section-item-desc .job-title span{
   display: block;
 }
 
-.jobs-section-item .jobs-section-item-desc a{
+.jobs-section-item .jobs-section-item-desc a.Gilroy-Regular{
   position: absolute;
   bottom: 20px;
   right: 20px;
   font-size: 14px;
   cursor: pointer;
   border: none;
+}
+
+.jobs-section-item .jobs-section-item-desc a.Gilroy-Regular:hover{
+  text-decoration: underline;
 }
 
 #jobs-section{
@@ -13569,7 +13573,8 @@ section.slide {
 
 @media screen and (max-width: 880px){
   .jobs-section-item{
-    min-width: calc(100%/3);
+    min-width: calc(100vw/2.9);
+    max-width: calc(100vw/2.3);
   }
 }
 
@@ -13584,7 +13589,11 @@ section.slide {
 
 @media screen and (max-width: 530px){
   .jobs-section-item{
-    min-width: calc(100%/2);
+    min-width: 70%;
+    max-width: 100%;
+  }
+  .jobs-section-items{
+    justify-content: center;
   }
 }
 
