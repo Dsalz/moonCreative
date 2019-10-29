@@ -13560,8 +13560,11 @@ section.slide {
 }
 
 #jobs-section{
-  margin-top: 138px;
   font-family: Gilroy-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.page-wrapper{
+  margin-top: 138px;
 }
 
 @media screen and (max-width: 880px){
@@ -13676,7 +13679,7 @@ section.slide {
   border: none !important;
 }
 @media only screen and (max-width: 768px) {
-  #jobs-section{
+  .page-wrapper{
     margin-top: 65px;
   }
   /* line 382, ../scss/breakpoints/_base.scss */
